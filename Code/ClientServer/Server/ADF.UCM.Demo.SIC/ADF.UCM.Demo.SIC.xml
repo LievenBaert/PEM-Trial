@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ADF.UCM.Demo.SIC</name>
+    </assembly>
+    <members>
+        <member name="T:ADF.UCM.Demo.SIC.Data.DownloadDemoData">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ADF.UCM.Demo.SIC.Data.DownloadDemoData.DownloadDemoDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ADF.UCM.Demo.SIC.Data.DownloadDemoData.DownloadDemoRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ADF.UCM.Demo.SIC.Data.DownloadDemoData.DownloadDemoRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ADF.UCM.Demo.SIC.Data.UploadDemoData">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ADF.UCM.Demo.SIC.Data.UploadDemoData.UploadDemoDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ADF.UCM.Demo.SIC.Data.UploadDemoData.UploadDemoRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ADF.UCM.Demo.SIC.Data.UploadDemoData.UploadDemoRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+    </members>
+</doc>

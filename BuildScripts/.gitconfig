@@ -1,0 +1,14 @@
+
+[http]
+[core]
+	autocrlf = true
+	longpaths = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[http]
+	sslVerify = false
+
+[https]
+	proxy = http://packagefeeds.sidmar.be:8888

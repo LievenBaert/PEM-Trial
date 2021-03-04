@@ -1,0 +1,29 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Include>
+  <!-- This include file describe the variables that will be used in the wxs files-->
+
+  <!-- The UCM variables will be updated during the TFS build process -->
+  <?define UCMVersion = "1.0.0" ?>
+  <?define UCMMajorMinorPatch = "1.0.0" ?>
+  <?define UCMInstance = "AUT" ?>
+  <?define UCMEnvironment = "DVLP" ?>
+
+  <?define AppName = "CSDemo" ?>
+  <?define ProductName = "ADF.UCM.WebServices.CS.WixSetup_V$(var.UCMVersion)" ?>
+  <?define ProductTitle = "$(var.ProductName)" ?>
+  <?define WebSite = "INSTALL" ?>
+  <?define WebDirectory = "$(var.UCMInstance)Services.$(var.AppName)_V$(var.UCMVersion)" ?>
+  <?define Manufacturer = "ArcelorMittal" ?>
+  <?define Description = "A small test application used for ALM" ?>
+  <?define Comments = "A small test application used for ALM" ?>
+  <?define UpgradeCode = "{A29A94B8-E247-4202-876F-053A7647209A}" ?>
+
+  <?define WebSite = "Default Web Site" ?>
+  <?define WebDirectory = "$(var.UCMInstance)Services.$(var.AppName)_V$(var.UCMVersion)" ?>
+  <?define AppPool = "$(var.UCMInstance)Services.$(var.AppName)" ?>
+  <?define AppPoolGuid = "{F13C00B2-FC27-4718-A0D3-35B7BEAEE8CF}" ?>
+  <?define VirtDirGuid = "{75350AB1-2D8E-4924-A8A0-1A91CEC504C7}" ?>
+
+  <?define Compressed = "no" ?>
+  <?define ASPNetVersion = "4.0.30319.0" ?>
+</Include>

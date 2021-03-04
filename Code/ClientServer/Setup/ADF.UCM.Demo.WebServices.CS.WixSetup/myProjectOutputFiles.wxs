@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLDIR">
+            <Component Id="cmpED7EF73DF2EE6C3410E969D23C921182" Guid="{4CC222BF-5826-408D-87EE-A3B5F351F932}">
+                <File Id="fil80B73CE63B5E8747E4216E3776342C9B" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\Global.asax" />
+            </Component>
+            <Component Id="cmp67C20F14BE3D40DEAFEC435B2AAB730D" Guid="{7630563A-334A-4D9C-80C8-5C8AA82E0DF6}">
+                <File Id="fil85A126993AA0B0EF5F5ACEE66422C04A" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\Services.asmx" />
+            </Component>
+            <Component Id="cmpBBEA411EA9EAD9509FF4D3DF3D005CAF" Guid="{56634178-E899-4580-9613-710A253A0217}">
+                <File Id="fil3F19783C3EC6BAFCC97DF9D8C90C256A" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\Web.config" />
+            </Component>
+            <Directory Id="dirA5528701EE26FFBF346CCE20EE8ACE99" Name="bin">
+                <Component Id="cmp4AAE40735823443523E19603E4725782" Guid="{94EBA068-5C7F-4370-9851-1B98D0E7E476}">
+                    <File Id="fil8F3D60253AB3492BC8D6465587841345" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\bin\ADF.Messaging.Interfaces.dll" />
+                </Component>
+                <Component Id="cmp413CFAD09E77DA6B9D731BA11339B3FB" Guid="{736422BB-7680-4A27-9EBF-B6BB3CD2B46A}">
+                    <File Id="fil7A5F2F493F87F07FB8F768A75C451158" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\bin\ADF.System.dll" />
+                </Component>
+                <Component Id="cmp4B74C1475A482388164882CD2114A873" Guid="{AFA90875-5DAA-4DF4-AA8C-937775685B6D}">
+                    <File Id="filEEB18E943455509215B28059C09DF7D7" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\bin\ADF.UCM.Demo.BC.dll" />
+                </Component>
+                
+                <Component Id="cmp9427E4BEDB7AB4515049EC9CDA12742B" Guid="{40AC1BF3-0256-4247-819E-221145F89DD5}">
+                    <File Id="fil2FE9CC6A76AE6EE27F358BA168074776" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\bin\ADF.UCM.Demo.BS.dll" />
+                </Component>
+                <Component Id="cmp4648C99C1F18C80031A2FD4C90D56C4F" Guid="{45ED357C-E9F0-4831-B04B-D539DA4E8943}">
+                    <File Id="filE068865AF6DCCD3D65847E76CE481F12" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\bin\ADF.UCM.Demo.PFS.dll" />
+                </Component>
+                
+                <Component Id="cmp66D586A04B79B80492F38E74192C26EE" Guid="{CEFB735D-BD32-465C-8865-7CC98EDE365C}">
+                    <File Id="fil44EBC5D3B243DF59F0ED200AC96C19B7" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\bin\ADF.UCM.Demo.Webservices.dll" />
+                </Component>
+                
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="myProjectOutputFiles">
+            <ComponentRef Id="cmpED7EF73DF2EE6C3410E969D23C921182" />
+            <ComponentRef Id="cmp67C20F14BE3D40DEAFEC435B2AAB730D" />
+            <ComponentRef Id="cmpBBEA411EA9EAD9509FF4D3DF3D005CAF" />
+            <ComponentRef Id="cmp4AAE40735823443523E19603E4725782" />
+            <ComponentRef Id="cmp413CFAD09E77DA6B9D731BA11339B3FB" />
+            <ComponentRef Id="cmp4B74C1475A482388164882CD2114A873" />
+            
+            <ComponentRef Id="cmp9427E4BEDB7AB4515049EC9CDA12742B" />
+            <ComponentRef Id="cmp4648C99C1F18C80031A2FD4C90D56C4F" />
+            
+            <ComponentRef Id="cmp66D586A04B79B80492F38E74192C26EE" />
+            
+        </ComponentGroup>
+    </Fragment>
+</Wix>

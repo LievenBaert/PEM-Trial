@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<prj:Project xmlns:prj="http://schemas.microsoft.com/developer/msbuild/2003" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+
+  <prj:PropertyGroup>
+    <!-- for project files, use always a remove and insert combination to get the right xml namespaces -->
+
+    <prj:ApplicationVersion xdt:Transform="Remove"/>
+    <ApplicationVersion xdt:Transform="Insert">{UCM.FileVersion}</ApplicationVersion>
+
+    <!-- Specify only the ProductName for your startup client -->
+    <!--   Use the environment token when deploying multiple environments on the same box -->
+    <!--   This will result in multiple packages in the Add/Remove programs list (when install option is set to true) -->
+    <prj:ProductName xdt:Transform="Remove"/>
+    <ProductName xdt:Transform="Insert">ADF.UCM.Demo.HIC_{UCM.Environment}</ProductName>
+
+    <!-- Use the application or the manifest for trust. -->
+    <prj:UseApplicationTrust xdt:Transform="Remove"/>
+    <UseApplicationTrust xdt:Transform="Insert">false</UseApplicationTrust>
+
+    <!-- Specify the urls for the startup client -->
+    <prj:PublishUrl xdt:Transform="Remove"/>
+    <PublishUrl  xdt:Transform="Insert">http://{WF.NTW.NAME.CO:localhost}:{WF.NTW.PORT.CO:80}/AUTClient.CSDemo/</PublishUrl>
+
+    <prj:UpdateUrl xdt:Transform="Remove"/>
+    <UpdateUrl  xdt:Transform="Insert">http://{WF.NTW.NAME.CO:localhost}:{WF.NTW.PORT.CO:80}/AUTClient.CSDemo/</UpdateUrl>
+
+    <prj:SupportUrl xdt:Transform="Remove"/>
+    <SupportUrl  xdt:Transform="Insert">http://{WF.NTW.NAME.CO:localhost}:{WF.NTW.PORT.CO:80}/AUTClient.CSDemo/</SupportUrl>
+
+    <!-- Force to write the Product, Publisher, and SupportUrl properties to the application manifest. -->
+    <prj:UseApplicationTrust xdt:Transform="Remove"/>
+    <UseApplicationTrust xdt:Transform="Insert">true</UseApplicationTrust>
+
+    <!-- When signing is enabled, use an environment specific key -->
+    <prj:SignManifests xdt:Transform="Remove"/>
+    <SignManifests xdt:Transform="Insert">true</SignManifests>
+    <!--   use a key file per environment to be able to run the application for different environments on the same box (for example QA and PROD) -->
+    <prj:ManifestKeyFile xdt:Transform="Remove"/>
+    <ManifestKeyFile xdt:Transform="Insert">{UCM.Certificates}\ArcelorMittal Ghent - {UCM.Environment}.pfx</ManifestKeyFile>
+
+    <!-- If this parameter is true, the application will be installed on the user’s Start menu, and can be removed by using the Add or Remove Programs dialog box -->
+    <prj:Install xdt:Transform="Remove"/>
+    <Install xdt:Transform="Insert">true</Install>
+    <prj:ApplicationIcon xdt:Transform="Remove"/>
+    <ApplicationIcon xdt:Transform="Insert">ADF.UCM.Demo.HIC.ico</ApplicationIcon>
+
+    <prj:ManifestKeyFile xdt:Transform="Remove"/>
+    <prj:NoWin32Manifest xdt:Transform="Remove"/>
+  </prj:PropertyGroup>
+
+</prj:Project>

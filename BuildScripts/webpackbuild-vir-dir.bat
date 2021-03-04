@@ -1,0 +1,7 @@
+SET VIRTUALDIRECTORY=%1
+
+if NOT %VIRTUALDIRECTORY% == "" (
+  SET VIRTUALDIRECTORY="/%VIRTUALDIRECTORY:"=%/"
+)
+
+call npm run build:prod -- --base-href=%VIRTUALDIRECTORY%

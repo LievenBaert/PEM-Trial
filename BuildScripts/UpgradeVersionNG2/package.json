@@ -1,0 +1,99 @@
+{
+  "name": "@arcelormittal-platform/generator-am",
+  "version": "2.0.1",
+  "description": "The ArcelorMittal core package for building Angular applications",
+  "license": "ISC",
+  "author": {
+    "name": "Laurenz Demey",
+    "email": "Laurenz.Demey.external@arcelormittal.com"
+  },
+  "contributors": [
+    {
+      "name": "Glenn Latomme",
+      "email": "glenn.latomme.external@arcelormittal.com"
+    },
+    {
+      "name": "Florian Verdonck",
+      "email": "florian.verdonck.external@arcelormittal.com"
+    }
+  ],
+  "keywords": [
+    "ArcelorMittal",
+    "Angular 1.5+",
+    "Core",
+    "Best Practices"
+  ],
+  "main": "dist/main.bundle.js",
+  "module": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "build:dev": "webpack --config webpack/webpack.dev.js --progress --profile",
+    "build:prod": "webpack --config webpack/webpack.prod.js  --progress --profile --bail ",
+    "build": "npm run build:dev",
+    "ci": "npm run lint && npm test",
+    "clean:dist": "npm run rimraf -- dist",
+    "clean:install": "npm set progress=false && npm install",
+    "clean": "npm cache clean && npm run rimraf -- node_modules coverage dist docs",
+    "docs": "npm run typedoc -- --options typedoc.json ./src/",
+    "lint": "npm run tslint \"src/**/*.ts\"",
+    "prebuild:dev": "npm run clean:dist && npm run ci",
+    "prebuild:prod": "npm run clean:dist && npm run ci",
+    "preclean:install": "npm run clean",
+    "rimraf": "rimraf",
+    "test": "karma start",
+    "test:watch": "npm run test -- --no-single-run --auto-watch",
+    "tslint": "tslint",
+    "typedoc": "typedoc",
+    "version": "npm run build",
+    "webpack": "webpack"
+  },
+  "dependencies": {
+    "@reactivex/rxjs": "5.2.0",
+    "@types/angular": "1.6.1",
+    "@types/angular-cookies": "1.4.2",
+    "@types/angular-jwt": "0.0.28",
+    "@types/angular-translate": "2.4.33",
+    "@types/cordova": "0.0.34",
+    "@types/lodash": "4.14.41",
+    "@types/moment": "2.13.0",
+    "angular": "1.6.1",
+    "angular-bindonce": "0.3.1",
+    "angular-cookies": "1.6.1",
+    "angular-jwt": "0.1.3",
+    "angular-moment": "1.0.0",
+    "angular-sanitize": "1.6.1",
+    "angular-translate": "2.11.1",
+    "angular-translate-loader-url": "2.11.1",
+    "angular-translate-storage-cookie": "2.11.1",
+    "angular-ui-router": "1.0.0-beta.3",
+    "angular1-async-filter": "1.0.2",
+    "core-js": "2.4.1",
+    "lodash": "4.17.4",
+    "moment": "2.17.1",
+    "@arcelormittal-platform/core": "2.0.1"
+  },
+  "devDependencies": {
+    "@arcelormittal-frontend/dev-tools": "1.1.3",
+    "@arcelormittal-platform/dev-tools": "2.0.1"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "docs/",
+    "index.js",
+    "index.d.ts",
+    "tslint.json",
+    "tsconfig.json"
+  ],
+  "repository": {
+    "type": "tfs",
+    "url": "http://wftfsprod.sidmar.be:8080/tfs/Public%20Services/AWF%20Libarary/AWF.Core"
+  },
+  "bugs": {
+    "url": "http://wftfsprod.sidmar.be:8080/tfs/Public%20Services/Development%20process%20and%20standards/Front-End%20Core"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3"
+  }
+}

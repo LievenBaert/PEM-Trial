@@ -1,0 +1,10 @@
+{
+    "directory": "vendor",
+    "strict-ssl": false,
+    "proxy": "http://packagefeeds.sidmar.be:8888",
+    "https-proxy": "http://packagefeeds.sidmar.be:8888",
+    "storage": {
+        "packages": "d:\\_builds\\bower_cache"
+    }
+}
+ 

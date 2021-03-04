@@ -1,0 +1,8 @@
+{
+    "directory": "vendor",
+    "strict-ssl": false,
+    "registry": "http://packagefeeds.sidmar.be:81/bower/Bower",
+    "proxy": "http://packagefeeds.sidmar.be:8888",
+    "https-proxy": "http://packagefeeds.sidmar.be:8888"
+}
+ 

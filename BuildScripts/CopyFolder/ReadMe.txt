@@ -1,0 +1,1 @@
+Needed by front-end build to copy dist folder to the public folder

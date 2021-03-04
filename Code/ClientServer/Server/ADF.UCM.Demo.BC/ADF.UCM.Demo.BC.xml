@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ADF.UCM.Demo.BC</name>
+    </assembly>
+    <members>
+        <member name="T:ADF.UCM.Demo.BC.Data.TDSUsers_Logical">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ADF.UCM.Demo.BC.Data.TDSUsers_Logical.UserDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ADF.UCM.Demo.BC.Data.TDSUsers_Logical.UserRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ADF.UCM.Demo.BC.Data.TDSUsers_Logical.UserRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+    </members>
+</doc>

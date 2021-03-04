@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "greetingapi.fullname" . }}
+  labels:
+    app: {{ template "greetingapi.name" . }}
+    chart: {{ template "greetingapi.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "greetingapi.name" . }}
+    release: {{ .Release.Name }}

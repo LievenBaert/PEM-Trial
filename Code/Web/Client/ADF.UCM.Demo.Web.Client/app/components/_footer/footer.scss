@@ -1,0 +1,18 @@
+@import '../_global/styles/imports';
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: $footer-height - 10px;
+
+  #footer {
+    padding: 5px;
+
+    div {
+      font-size: 10px;
+      line-height: 9px;
+    }
+  }
+}

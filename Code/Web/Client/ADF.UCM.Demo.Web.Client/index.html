@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html class="no-js" lang="en" ng-strict-di>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ADF-UCM Demo WebClient</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="public/css/vendor.css">
+    <link rel="stylesheet" href="public/css/app.css">
+</head>
+<body ng-controller="GlobalController">
+    <!--[if lte IE 9]><p class="browserupgrade"> You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header ui-view="header"></header>
+    <main flex="none" layout="column" ng-cloak>
+        <div layout="row" layout-fill>
+            <div ui-view="sidebar"></div>
+            <div id="main" ui-view="main" layout-fill></div>
+        </div>
+    </main>
+    <footer flex ui-view="footer"></footer>
+
+    <script src="public/js/vendor.js"></script>
+    <script src="public/js/app.js"></script>
+    <script src="public/js/templateCacheHtml.js"></script>
+
+    <script id="__bs_script__">
+//<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.13.0.js'><\/script>".replace("HOST", location.hostname));
+        //]]></script>
+</body>
+</html>

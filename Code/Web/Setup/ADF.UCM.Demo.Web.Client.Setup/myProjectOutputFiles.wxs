@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLDIR">
+            <Directory Id="dir046A354D6E8712DD0A24AAE6FAE4DE68" Name="css">
+                <Component Id="cmpF5C48DDE1CE63D14E866249F4B5B95B1" Guid="{3763D8EB-08A4-4C36-8514-00059E84343C}">
+                    <File Id="filC883D6DCA55C7BA39F3677660E7A9166" KeyPath="yes" Source="$(var.myProjectOutput.PublicPath)\css\vendor.css" />
+                </Component>
+            </Directory>
+            <Directory Id="dirDD9DED17061B4BDA054F7328F0013636" Name="js">
+                <Component Id="cmp8D399195ED9BD7298702EADC2E55B1F9" Guid="{3991DA60-7325-4969-A6CB-9E3F0B94495E}">
+                    <File Id="filE3F42608CBA4F0EB96AD80EEF96F7260" KeyPath="yes" Source="$(var.myProjectOutput.PublicPath)\js\app.js" />
+                </Component>
+                <Component Id="cmpAC9A34DF87A4C50F5CC325568B0AEF6F" Guid="{F4F3F01B-6A37-43B6-86BA-F385E5B3B391}">
+                    <File Id="filE9140879872FEA371D9E8B553FB756B4" KeyPath="yes" Source="$(var.myProjectOutput.PublicPath)\js\templateCacheHtml.js" />
+                </Component>
+                <Component Id="cmp86C604C93E976746E32A0DD64F12C27D" Guid="{0320933C-CB8A-4168-AC2E-FA8B91DA9C55}">
+                    <File Id="fil2E717D6075EA59F8B4054278A34C966A" KeyPath="yes" Source="$(var.myProjectOutput.PublicPath)\js\vendor.js" />
+                </Component>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="myProjectOutputFiles">
+            <ComponentRef Id="cmpF5C48DDE1CE63D14E866249F4B5B95B1" />
+            <ComponentRef Id="cmp8D399195ED9BD7298702EADC2E55B1F9" />
+            <ComponentRef Id="cmpAC9A34DF87A4C50F5CC325568B0AEF6F" />
+            <ComponentRef Id="cmp86C604C93E976746E32A0DD64F12C27D" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

@@ -1,0 +1,4 @@
+image:
+  repository: {acr.registry}/{acr.namespace}/images/greeting-web
+  tag: {UCM.Version}
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<default>
+  <!-- base api to use in services -->
+  <api></api>
+
+  <!-- api for retrieving translations. The language will be appended at the end automatically -->
+  <translationApi></translationApi>
+
+  <!-- Security -->
+  <clientId></clientId>
+  <identityProvider>http://web-scsecur-sso.appliarmony.net/TokenService</identityProvider>
+  <claimsProvider></claimsProvider>
+  <scope></scope>
+  <virtualDirectory></virtualDirectory>
+
+  <!-- Portal/ScaleUp specific options -->
+  <searchClientUri>http://web-scsearch-client-qat.appliarmony.net/SCSEARCH-CLIENTServices%20Client%202/</searchClientUri>
+  <scaleUpPortalApi>http://web-scportal-dev.appliarmony.net/SCPORTALServices</scaleUpPortalApi>
+
+  <!-- Tableau -->
+  <tableauApi>http://web-scrpt-sure.appliarmony.net/SCRPT-SUREServices.TableauGateway.DEV</tableauApi>
+  <tableau>http://web-sure-tableau.arcelormittal.net/t/SURE_DEV/views</tableau>
+
+  <!-- Office 365 -->
+  <amColleagueApi>http://web-scsecur-auth.appliarmony.net/Services.Microsoft.Graph/api/</amColleagueApi>
+
+  <!-- Environment info -->
+  <environmentInfo></environmentInfo>
+  <showEnvironmentInfo></showEnvironmentInfo>
+</default>

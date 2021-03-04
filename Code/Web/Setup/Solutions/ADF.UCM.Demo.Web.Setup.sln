@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Clients", "1. Clients", "{EEE9D87B-E64B-4E8B-91EA-D1D98EACF299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADF.UCM.Demo.Web.Client", "..\..\Client\ADF.UCM.Demo.Web.Client\ADF.UCM.Demo.Web.Client.csproj", "{394F6088-5E5F-4FAD-8333-C9B6A0394817}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Server", "2. Server", "{B3E5768B-8E0C-45FF-A58F-D1473D60C905}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Setup", "3. Setup", "{A09D6BF5-559F-4235-9283-5C87967E056D}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ADF.UCM.Demo.Web.Client.Setup", "..\ADF.UCM.Demo.Web.Client.Setup\ADF.UCM.Demo.Web.Client.Setup.wixproj", "{4BA6306E-B29E-489B-AC2A-41BB28DFD3B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{394F6088-5E5F-4FAD-8333-C9B6A0394817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{394F6088-5E5F-4FAD-8333-C9B6A0394817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{394F6088-5E5F-4FAD-8333-C9B6A0394817}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{394F6088-5E5F-4FAD-8333-C9B6A0394817}.Debug|x86.Build.0 = Debug|Any CPU
+		{394F6088-5E5F-4FAD-8333-C9B6A0394817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{394F6088-5E5F-4FAD-8333-C9B6A0394817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{394F6088-5E5F-4FAD-8333-C9B6A0394817}.Release|x86.ActiveCfg = Release|Any CPU
+		{394F6088-5E5F-4FAD-8333-C9B6A0394817}.Release|x86.Build.0 = Release|Any CPU
+		{4BA6306E-B29E-489B-AC2A-41BB28DFD3B3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4BA6306E-B29E-489B-AC2A-41BB28DFD3B3}.Debug|Any CPU.Build.0 = Debug|x86
+		{4BA6306E-B29E-489B-AC2A-41BB28DFD3B3}.Debug|x86.ActiveCfg = Debug|x86
+		{4BA6306E-B29E-489B-AC2A-41BB28DFD3B3}.Debug|x86.Build.0 = Debug|x86
+		{4BA6306E-B29E-489B-AC2A-41BB28DFD3B3}.Release|Any CPU.ActiveCfg = Release|x86
+		{4BA6306E-B29E-489B-AC2A-41BB28DFD3B3}.Release|Any CPU.Build.0 = Release|x86
+		{4BA6306E-B29E-489B-AC2A-41BB28DFD3B3}.Release|x86.ActiveCfg = Release|x86
+		{4BA6306E-B29E-489B-AC2A-41BB28DFD3B3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{394F6088-5E5F-4FAD-8333-C9B6A0394817} = {EEE9D87B-E64B-4E8B-91EA-D1D98EACF299}
+		{4BA6306E-B29E-489B-AC2A-41BB28DFD3B3} = {A09D6BF5-559F-4235-9283-5C87967E056D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://wftfsprod.sidmar.be:8080/tfs/training
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\Client\\ADF.UCM.Demo.Web.Client\\ADF.UCM.Demo.Web.Client.csproj
+		SccProjectTopLevelParentUniqueName1 = ADF.UCM.Demo.Web.Setup.sln
+		SccProjectName1 = ../../Client/ADF.UCM.Demo.Web.Client
+		SccLocalPath1 = ..\\..\\Client\\ADF.UCM.Demo.Web.Client
+		SccProjectUniqueName2 = ..\\ADF.UCM.Demo.Web.Client.Setup\\ADF.UCM.Demo.Web.Client.Setup.wixproj
+		SccProjectTopLevelParentUniqueName2 = ADF.UCM.Demo.Web.Setup.sln
+		SccProjectName2 = ../ADF.UCM.Demo.Web.Client.Setup
+		SccLocalPath2 = ..\\ADF.UCM.Demo.Web.Client.Setup
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+version: '3'
+services:
+  greet-api:
+    container_name: greeting-api
+    restart: on-failure    
+    ports:
+        - 8000:80
+        - 8001:443
+
+  greet-web:
+    container_name: greeting-web
+    environment:
+        - "ApiUrlGreeting=http://localhost:8001"
+    ports:
+        - 8080:80
+        - 8081:8080
+    restart: on-failure        
+    depends_on:
+        - greet-api

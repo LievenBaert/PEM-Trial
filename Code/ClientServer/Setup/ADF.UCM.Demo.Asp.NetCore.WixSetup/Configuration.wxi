@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Include>
+  <!-- This include file describe the variables that will be used in the wxs files-->
+
+  <!-- Change the values containing 'xxx' -->
+  <!-- The UCM variables will be updated during the TFS build process -->
+  <?define UCMVersion = "1.0.0" ?>  
+  <?define UCMMajorMinorPatch = "1.0.0" ?>  
+  <?define UCMInstance = "AUT" ?>
+  <?define UCMEnvironment = "DVLP" ?>
+
+  <?define AppName = "ADF.UCM.Demo.Asp.NetCore.WixSetup" ?> <!-- The name of your web component -->
+  <?define ProductName = "$(var.UCMInstance).$(var.AppName).Setup_V$(var.UCMVersion)" ?>
+  <?define ProductTitle = "$(var.ProductName)" ?>
+
+  <?define WebSite = "INSTALL" ?>
+  <?define WebDirectory = "$(var.UCMInstance)Services.$(var.AppName)_V$(var.UCMVersion)" ?>
+  
+  <?define Manufacturer = "ArcelorMittal" ?>
+  <?define Description = "An application of $(var.UCMInstance)" ?>
+  <?define Comments = "$(var.Description)" ?>    
+  <?define UpgradeCode = "{378E9889-F3E7-48DE-8235-EB7C46203BB5}" ?>
+
+  <?define Compressed = "no" ?>
+  <!-- <?define ASPNetVersion = "2.0.50727.0" ?> -->
+  <?define ASPNetVersion = "4.0.30319.0" ?>
+</Include>

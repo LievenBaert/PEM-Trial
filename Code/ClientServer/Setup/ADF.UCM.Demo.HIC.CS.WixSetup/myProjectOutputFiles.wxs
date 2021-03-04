@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLDIR">
+            <Component Id="cmp3D7653B6A93A4773689F2A8012EAA90B" Guid="{C92A005C-807D-42AF-A8B9-43EC64B65E8A}">
+                <File Id="filB64F22C01310267971D4CDE0DD1E54B9" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.System.dll" />
+            </Component>
+            <Component Id="cmp513284EFEA944657F84EC0A72735C560" Guid="{0ECE0D5D-A05B-4C80-B139-B46B78380FC3}">
+                <File Id="fil35BC42EB815C70191528D0098B75838D" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.HIC.application" />
+            </Component>
+            <Component Id="cmpD7AF45EC183F52D591AE8A79BE9ABAB6" Guid="{4144C198-13B3-45B5-8ABF-D60424369F93}">
+                <File Id="filB74DD8005E61C8B3EED66A52B3A524A1" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.HIC.exe" />
+            </Component>
+            <Component Id="cmp3F239B226903B6E8A2373929EA45ED60" Guid="{EE52F03E-F0BF-4B89-9B85-3F63DAE5D48E}">
+                <File Id="fil5684996E2264BAC293ED2C4ACB968D36" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.HIC.exe.config" />
+            </Component>
+            <Component Id="cmpAE43B3C977BFC8B460A888B2ECC56EE9" Guid="{A0EE5FE2-F409-498A-97B8-553496CE71C1}">
+                <File Id="filB562FC5B38F67D2C2053B03AB5F628CB" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.HIC.exe.manifest" />
+            </Component>
+            <Component Id="cmp1A27D9AD64AA47462199CD7E5B2319A7" Guid="{FBCC0733-D23F-4824-AAEE-5BAEE4DDCEA6}">
+                <File Id="fil9AC2BFEDB315B46A91194CD6A2ACC479" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.HIC.pdb" />
+            </Component>
+            <Component Id="cmp0F99E1381618CB588F29F9BE9FC258A2" Guid="{23BF59EB-AA82-4914-B16D-04097B246B92}">
+                <File Id="fil3B7631041F692CF879093F46DA9A5579" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.HIC.vshost.application" />
+            </Component>
+            
+            
+            
+            <Component Id="cmp6907DE5E823A9F0D40A49DFBE641C293" Guid="{C5D7D4C7-3704-4141-8B39-270DF3AA009A}">
+                <File Id="filC9900B225225AAF948793145BE3448FF" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.WebServices.Proxy.dll" />
+            </Component>
+            <Component Id="cmpDEBEA7037122378D7DA622E8F49C568C" Guid="{31C2D1EB-1D3B-4432-AE7D-F7252A211BF4}">
+                <File Id="fil577C89BE8C3D1B37EFEDE9039857E080" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.WebServices.Proxy.pdb" />
+            </Component>
+            
+            <Component Id="cmp1923BB1EE47B77E2E3C06F32CE61168E" Guid="{66CE78DA-8846-4037-A5C4-FE771F4CCA06}">
+                <File Id="filB428197E9293603D52997F746CBCCB51" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.WebServices.Proxy.XmlSerializers.dll" />
+            </Component>
+            <Directory Id="dir5A10D01FB847007B5517A50CB592C011" Name="app.publish">
+                
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="myProjectOutputFiles">
+            <ComponentRef Id="cmp3D7653B6A93A4773689F2A8012EAA90B" />
+            <ComponentRef Id="cmp513284EFEA944657F84EC0A72735C560" />
+            <ComponentRef Id="cmpD7AF45EC183F52D591AE8A79BE9ABAB6" />
+            <ComponentRef Id="cmp3F239B226903B6E8A2373929EA45ED60" />
+            <ComponentRef Id="cmpAE43B3C977BFC8B460A888B2ECC56EE9" />
+            <ComponentRef Id="cmp1A27D9AD64AA47462199CD7E5B2319A7" />
+            <ComponentRef Id="cmp0F99E1381618CB588F29F9BE9FC258A2" />
+            
+            
+            
+            <ComponentRef Id="cmp6907DE5E823A9F0D40A49DFBE641C293" />
+            <ComponentRef Id="cmpDEBEA7037122378D7DA622E8F49C568C" />
+            
+            <ComponentRef Id="cmp1923BB1EE47B77E2E3C06F32CE61168E" />
+            
+        </ComponentGroup>
+    </Fragment>
+</Wix>

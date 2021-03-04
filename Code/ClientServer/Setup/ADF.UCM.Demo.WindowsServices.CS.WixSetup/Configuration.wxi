@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Include>
+  <!-- This include file describe the variables that will be used in the wxs files-->
+
+  <!-- Change the values containing 'xxx' -->
+  <!-- The UCM variables will be updated during the TFS build process -->
+  <?define UCMVersion = "1.0.0" ?>
+  <?define UCMMajorMinorPatch = "1.0.0" ?>
+  <?define UCMInstance = "AUT" ?>
+  <?define UCMEnvironment = "LOCAL" ?>
+ 
+  <?define AppName = "MyService" ?> <!-- The name of your windows component -->
+  <?define ProductName = "$(var.UCMInstance)-$(var.UCMEnvironment).$(var.AppName).Setup_V$(var.UCMVersion)" ?>
+  <?define ProductTitle = "$(var.ProductName)" ?>
+  <?define PackageDirectory = "$(var.ProductName)" ?>
+
+  <?define ServiceName = "APP-$(var.UCMInstance)-$(var.UCMEnvironment)-$(var.AppName)_V$(var.UCMVersion)" ?>
+  
+  <?define Manufacturer = "ArcelorMittal" ?>
+  <?define Description = "An application of $(var.UCMInstance)" ?>
+  <?define Comments = "$(var.Description)" ?>   
+  <?define UpgradeCode = "{EFBF44F2-489B-4201-BE98-E050887138A8}" ?>
+
+  <!-- Use the appropriate install folder to run in 32bit or 64bit modus -->
+  <?define ProgramFiles="ProgramFiles64Folder"?>
+  <!--<?define ProgramFiles="ProgramFilesFolder"?>-->
+  <?define DefaultLocation = "[$(var.ProgramFiles)]\[Manufacturer]" ?>
+  
+  <?define Compressed = "no" ?>
+</Include>

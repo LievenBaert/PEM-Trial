@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Windows</DockerTargetOS>
+    <ProjectGuid>7bd84831-d71b-49dd-b2cf-db4725e6b812</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}/helloapi</DockerServiceUrl>
+    <DockerServiceName>helloworldapi</DockerServiceName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="docker-compose.override.yml">
+      <DependentUpon>docker-compose.yml</DependentUpon>
+    </None>
+    <None Include="docker-compose.yml" />
+    <None Include=".dockerignore" />
+    <None Include="docker-compose\Chart.transform.yaml" />
+    <None Include="docker-compose\Chart.yaml" />
+    <None Include="docker-compose\templates\greeting-api-deployment.transform.yaml" />
+    <None Include="docker-compose\templates\greeting-api-deployment.yaml" />
+    <None Include="docker-compose\templates\greeting-api-service.yaml" />
+    <None Include="docker-compose\templates\greeting-web-deployment.yaml" />
+    <None Include="docker-compose\templates\greeting-web-service.yaml" />
+  </ItemGroup>
+</Project>

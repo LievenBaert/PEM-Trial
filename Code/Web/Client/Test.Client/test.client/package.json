@@ -1,0 +1,33 @@
+{
+  "name": "test.client",
+  "maintainer": "Training",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build",
+    "build:prod": "ng build --prod --base-href /Training/",
+    "clean:all": "npm run clean:tmp && rimraf node_modules",
+    "clean:tmp": "rimraf coverage dist tmp docs",
+    "docs": "compodoc -p tsconfig.json -d docs --disableCoverage --silent",
+    "lint": "npm run lint:ts && npm run lint:scss && npm run lint:html",
+    "lint:fix": "npm run lint:ts -- --fix && npm run lint:scss -- --fix && npm run lint:html -- --fix",
+    "lint:html": "htmlhint --rulesdir node_modules/@arcelormittal-platform/dev-tools/htmlhint --config node_modules/@arcelormittal-platform/dev-tools/.htmlhintrc src/**/*.html",
+    "lint:scss": "stylelint src/**/*.scss",
+    "lint:ts": "tslint \"src/**/*.ts\"",
+    "mocks": "json-server --watch mocks/mocks.json --port 8300",
+    "prettier": "prettier --write \"src/**/*.{ts,scss}\"",
+    "test": "jest --config ./node_modules/@arcelormittal-platform/dev-tools/jest/jest.config.json --runInBand",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --config ./node_modules/@arcelormittal-platform/dev-tools/jest/jest.config.json"
+  },
+  "private": true,
+  "dependencies": {
+    "@arcelormittal-platform/core": "",
+    "@arcelormittal-platform/ui": "",
+    "@arcelormittal-platform/security": ""
+  },
+  "devDependencies": {
+    "@angular/cli": "~7.0.2",
+    "@arcelormittal-platform/dev-tools": ""
+  }
+}

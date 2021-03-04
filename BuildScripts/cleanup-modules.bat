@@ -1,0 +1,2 @@
+rimraf node_modules
+rimraf vendor

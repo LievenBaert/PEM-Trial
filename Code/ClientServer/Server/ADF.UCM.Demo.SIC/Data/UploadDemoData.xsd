@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="UploadDemoData" targetNamespace="http://tempuri.org/UploadDemoData.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/UploadDemoData.xsd" xmlns:mstns="http://tempuri.org/UploadDemoData.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="UploadDemoData" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="UploadDemo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Key" type="xs:string" minOccurs="0" />
+							<xs:element name="Value" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="UploadDemoDataKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:UploadDemo" />
+			<xs:field xpath="mstns:Key" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

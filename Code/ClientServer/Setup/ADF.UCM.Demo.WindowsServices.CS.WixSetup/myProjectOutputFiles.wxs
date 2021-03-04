@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLDIR">
+            <Component Id="cmp1195A7E0CE2D6404F46AC18DD1D43E2D" Guid="{57BE4A65-A196-4D6E-B58F-7D4A18D1F2F1}">
+                <File Id="filA27853595EC17AFF2E31364E12B91A1E" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.Log4Net.dll" />
+            </Component>
+            <Component Id="cmp43D09FB6B27BEE61040E224680A01569" Guid="{FFF9EBED-3D99-404D-857B-89AE0350C19B}">
+                <File Id="fil903FE92A1B660F833935421E539489F3" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.WindowsServices.exe" />
+            </Component>
+            <Component Id="cmpE5568532BE015F86F14A8A065D36A9BA" Guid="{0B5B193E-AE62-40F5-9E7D-C245ACFC222F}">
+                <File Id="fil7BC316A9922B70A5B1BE2C9592FDD7A4" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.WindowsServices.exe.config" />
+            </Component>
+            <Component Id="cmp3DB6E725D086DC474C64E5623CD3041B" Guid="{905629A1-7E41-43C3-8C96-0B2B0FC09E5A}">
+                <File Id="fil3B86B3A72765ABB48F963B0551BA1C9C" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\ADF.UCM.Demo.WindowsServices.pdb" />
+            </Component>
+            <Component Id="cmp461A8541CF8FE12018F493B2B7B75089" Guid="{D4451BCC-6580-49D5-98B2-15FB2E43A646}">
+                <File Id="fil34A2A0C1306330842E35B60DD09C8385" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\Common.Logging.Core.dll" />
+            </Component>
+            <Component Id="cmpE2E906EFD2495140F4C45BFE2535E7C1" Guid="{DE1E7415-D547-4A31-A421-723C7E9EF0FC}">
+                <File Id="fil2AF929C7329CFA1EABE236B803AADAF5" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\Common.Logging.Core.pdb" />
+            </Component>
+            
+            <Component Id="cmpD623F46AF90CC35E05144AA421CFB803" Guid="{F598043E-8138-4F0D-8AAA-A9925BAD1642}">
+                <File Id="fil981A1B79A27AD627633892D1C12D1271" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\Common.Logging.dll" />
+            </Component>
+            <Component Id="cmpE5F767942D5032BB2436A986A9513E0B" Guid="{0D5330AA-A9AC-4C06-836B-B390F7B7F424}">
+                <File Id="filD2550CC9405738004BDD6359686BB6F1" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\Common.Logging.Log4Net208.dll" />
+            </Component>
+            <Component Id="cmpB4B518CCEE1972EAE6736030F25815BD" Guid="{F5820D82-28A1-4F9E-BDC7-A64F322FFF8F}">
+                <File Id="fil2A2CE86541E325C5483A776FD3037802" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\Common.Logging.Log4Net208.pdb" />
+            </Component>
+            
+            <Component Id="cmp4D1356169DFDB3998E316A50017A0707" Guid="{AA517227-C9B9-4B12-ABE1-3EA0FC8EDD5A}">
+                <File Id="filB35985D058A18EAC3AD11221E08B00BF" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\Common.Logging.pdb" />
+            </Component>
+            
+            <Component Id="cmp13D6573EA8CF3F99F44BAE837E2771F0" Guid="{6E04AEDA-7835-406D-B5F0-54953F17B576}">
+                <File Id="fil2991F53D601CDF7142D0A9E1B42E116E" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\log4net.dll" />
+            </Component>
+            
+            <Component Id="cmp9B30CA2E30FBDEDA35B100AB70E631FA" Guid="{29FF8F8C-653F-43D7-BD57-13E4253C69EB}">
+                <File Id="fil74FAFF4201E4DD0E4D9AAF5F51B8FA27" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\Polly.dll" />
+            </Component>
+            <Component Id="cmp2B2DCE6BB981E5B0410BB4999DB3FC65" Guid="{BB9BEF12-20FC-4178-826D-4FE67CFD4E5E}">
+                <File Id="fil72DAF8307A1DA9A94F7D9C6F44FE7F0D" KeyPath="yes" Source="$(var.myProjectOutput.OutputPath)\Polly.pdb" />
+            </Component>
+            
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="myProjectOutputFiles">
+            <ComponentRef Id="cmp1195A7E0CE2D6404F46AC18DD1D43E2D" />
+            <ComponentRef Id="cmp43D09FB6B27BEE61040E224680A01569" />
+            <ComponentRef Id="cmpE5568532BE015F86F14A8A065D36A9BA" />
+            <ComponentRef Id="cmp3DB6E725D086DC474C64E5623CD3041B" />
+            <ComponentRef Id="cmp461A8541CF8FE12018F493B2B7B75089" />
+            <ComponentRef Id="cmpE2E906EFD2495140F4C45BFE2535E7C1" />
+            
+            <ComponentRef Id="cmpD623F46AF90CC35E05144AA421CFB803" />
+            <ComponentRef Id="cmpE5F767942D5032BB2436A986A9513E0B" />
+            <ComponentRef Id="cmpB4B518CCEE1972EAE6736030F25815BD" />
+            
+            <ComponentRef Id="cmp4D1356169DFDB3998E316A50017A0707" />
+            
+            <ComponentRef Id="cmp13D6573EA8CF3F99F44BAE837E2771F0" />
+            
+            <ComponentRef Id="cmp9B30CA2E30FBDEDA35B100AB70E631FA" />
+            <ComponentRef Id="cmp2B2DCE6BB981E5B0410BB4999DB3FC65" />
+            
+        </ComponentGroup>
+    </Fragment>
+</Wix>

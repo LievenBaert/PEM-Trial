@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ADF.UCM.Demo.WebServices.Proxy</name>
+    </assembly>
+    <members>
+        <member name="T:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.HelloWorldCompleted">
+            <remarks/>
+        </member>
+        <member name="E:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.GetCustomersCompleted">
+            <remarks/>
+        </member>
+        <member name="E:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.ProcessMessageCompleted">
+            <remarks/>
+        </member>
+        <member name="E:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.ProcessMessageWithParamsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.SendNewMessageCompleted">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.HelloWorld">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.BeginHelloWorld(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.EndHelloWorld(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.HelloWorldAsync">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.HelloWorldAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.GetCustomers">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.BeginGetCustomers(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.EndGetCustomers(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.GetCustomersAsync">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.GetCustomersAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.ProcessMessage">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.BeginProcessMessage(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.EndProcessMessage(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.ProcessMessageAsync">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.ProcessMessageAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.ProcessMessageWithParams(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.BeginProcessMessageWithParams(System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.EndProcessMessageWithParams(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.ProcessMessageWithParamsAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.ProcessMessageWithParamsAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.SendNewMessage">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.BeginSendNewMessage(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.EndSendNewMessage(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.SendNewMessageAsync">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.SendNewMessageAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:ADF.UCM.Demo.WebServices.Proxy.DemoService.Services.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:ADF.UCM.Demo.WebServices.Proxy.DemoService.HelloWorldCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:ADF.UCM.Demo.WebServices.Proxy.DemoService.HelloWorldCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:ADF.UCM.Demo.WebServices.Proxy.DemoService.HelloWorldCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:ADF.UCM.Demo.WebServices.Proxy.DemoService.GetCustomersCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:ADF.UCM.Demo.WebServices.Proxy.DemoService.GetCustomersCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:ADF.UCM.Demo.WebServices.Proxy.DemoService.GetCustomersCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:ADF.UCM.Demo.WebServices.Proxy.DemoService.ProcessMessageCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:ADF.UCM.Demo.WebServices.Proxy.DemoService.ProcessMessageWithParamsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:ADF.UCM.Demo.WebServices.Proxy.DemoService.SendNewMessageCompletedEventHandler">
+            <remarks/>
+        </member>
+    </members>
+</doc>

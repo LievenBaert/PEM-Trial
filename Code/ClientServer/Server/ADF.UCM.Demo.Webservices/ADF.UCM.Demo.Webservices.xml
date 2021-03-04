@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ADF.UCM.Demo.Webservices</name>
+    </assembly>
+    <members>
+        <member name="T:ADF.UCM.Demo.Webservices.Services">
+            <summary>
+            Summary description for WebService1
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ArcelorMittal Wix template for RAD compliant web deployments -->
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension">
+
+  <!-- Include package specific configuration -->
+  <?include $(sys.CURRENTDIR)\Configuration.wxi?>
+
+  <Product Id="*"  Name="$(var.ProductName)" Manufacturer="$(var.Manufacturer)" Version="$(var.UCMMajorMinorPatch)"
+                   UpgradeCode="$(var.UpgradeCode)" Language="1033" Codepage="Windows-1252">
+
+    <Package Id="*" Description="$(var.Description)" Comments="$(var.Comments)" Manufacturer="$(var.Manufacturer)"
+                    InstallerVersion="200" Languages="1033"
+                    Compressed="$(var.Compressed)" InstallScope="perMachine" InstallPrivileges="elevated"/>
+
+    <MediaTemplate EmbedCab="yes" />
+
+    <!-- Set the custom properties -->
+    <Property Id="TARGETASPNETVERSION" Value="$(var.ASPNetVersion)"  />
+    <Property Id="VSDFrameworkVersion" Value="v2.0"  />
+
+    <!-- Use the ArcelorMittal Web UI to select website and web directory -->
+    <UIRef Id = "WixUI_WebArcelorMittal"/>
+
+    <Feature Id="ProductFeature" Title="$(var.ProductTitle)" Level=" 1">
+      <ComponentGroupRef Id = "myProjectOutputFiles" />
+      <ComponentGroupRef Id="myIisConfiguration" />
+    </Feature>
+
+    <!-- The install folder and target virt directory will be set via ArcelorMittal custom action based on the selected website -->
+    <!-- There is not need to configure IIS since this will be done by RAD during the activation step -->
+    <Directory Id = "TARGETDIR" Name = "SourceDir">
+      <Directory Id = "INSTALLDIR" Name = "$(var.WebDirectory)" >
+        <!-- This is the folder where the web content will be located -->
+      </Directory >
+    </Directory >
+  </Product>
+
+  <Fragment>
+    <iis:WebSite Id="myWebSite" Description="[TARGETSITE]" >
+      <iis:WebAddress Id="AllUnassigned" Port="[TARGETPORT]" />
+    </iis:WebSite>
+    <ComponentGroup Id="myIisConfiguration" Directory="INSTALLDIR">
+      <Component Id="myAppPoolComponent" Guid="$(var.AppPoolGuid)" KeyPath="yes">
+        <iis:WebAppPool Id="myAppPool" Name="$(var.AppPool)" ManagedRuntimeVersion="v4.0" ManagedPipelineMode="integrated" Identity="localSystem" IdleTimeout="0" RecycleMinutes="0" />
+      </Component>
+      <Component Id="myVirtDirComponent" Guid="$(var.VirtDirGuid)" KeyPath="yes" >
+        <iis:WebVirtualDir Id="myVirtDir" Alias="[TARGETVDIR]" Directory="INSTALLDIR" WebSite="myWebSite">
+          <iis:WebApplication Id="myWebApplication" Name="[TARGETVDIR]" Isolation="high" WebAppPool ="myAppPool"/>
+        </iis:WebVirtualDir>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+
+</Wix>

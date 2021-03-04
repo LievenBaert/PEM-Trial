@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="Trace and Test Impact" id="cd3e7e27-b173-4ae0-87dc-4dda33f0252e" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>These are test settings for Trace and Test Impact.</Description>
+  <Execution>
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="LocalMachineDefaultRole">
+      <DataCollectors>
+        <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+          <Configuration>
+            <CodeCoverage xmlns="">
+              <Regular>
+                <CodeCoverageItem binaryFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Tests\ADF.UCM.Demo.BC.Tests\bin\Debug\ADF.UCM.Demo.BC.Tests.dll" pdbFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Tests\ADF.UCM.Demo.BC.Tests\bin\Debug\ADF.UCM.Demo.BC.Tests.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Server\ADF.UCM.Demo.BC\bin\ADF.UCM.Demo.BC.dll" pdbFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Server\ADF.UCM.Demo.BC\bin\ADF.UCM.Demo.BC.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Server\ADF.UCM.Demo.BS\bin\Debug\ADF.UCM.Demo.BS.dll" pdbFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Server\ADF.UCM.Demo.BS\bin\Debug\ADF.UCM.Demo.BS.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Server\ADF.UCM.Demo.PFS\bin\ADF.UCM.Demo.PFS.dll" pdbFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Server\ADF.UCM.Demo.PFS\bin\ADF.UCM.Demo.PFS.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Server\ADF.UCM.Demo.SIC\bin\ADF.UCM.Demo.SIC.dll" pdbFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Server\ADF.UCM.Demo.SIC\bin\ADF.UCM.Demo.SIC.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Tests\ADF.UCM.Demo.Webservices.Tests\bin\Debug\ADF.UCM.Demo.Webservices.Tests.dll" pdbFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Tests\ADF.UCM.Demo.Webservices.Tests\bin\Debug\ADF.UCM.Demo.Webservices.Tests.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Client\ADF.UCM.Demo.WebServices.Proxy\bin\ADF.UCM.Demo.WebServices.Proxy.dll" pdbFile="C:\_Sources\Training\ADF.UCM.Training\Development\Code\CS\Client\ADF.UCM.Demo.WebServices.Proxy\bin\ADF.UCM.Demo.WebServices.Proxy.pdb" instrumentInPlace="true" />
+              </Regular>
+              <AspNet>
+                <AspNetCodeCoverageItem id="713d62cb-caa3-4c61-96fb-d1362f7bb908" name="ADF.UCM.Demo.Webservices" applicationRoot="/AUTServices.CSDemo" url="http://localhost/AUTServices.CSDemo/" isIis="true" />
+              </AspNet>
+            </CodeCoverage>
+          </Configuration>
+        </DataCollector>
+      </DataCollectors>
+    </AgentRule>
+  </Execution>
+</TestSettings>

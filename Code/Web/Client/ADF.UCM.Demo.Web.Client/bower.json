@@ -1,0 +1,38 @@
+{
+    "name": "arcelormittal angular template",
+    "description": "",
+    "main": "index.js",
+    "authors": [ ],
+    "license": "ISC",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "vendor",
+        "test",
+        "tests"
+    ],
+    "overrides": {
+        "material-design-icons-iconfont": {
+            "main": [
+                "**/*.{eot,svg,ijmap,ttf,woff,woff2}"
+            ]
+        },
+        "font-awesome": {
+            "main": [
+                "css/font-awesome.css",
+                "fonts/*"
+            ]
+        }
+    },
+    "dependencies": {
+        "angular": "^1.5.6",
+        "angular-deferred-bootstrap": "^0.1.9",
+        "angular-ui-router": "^0.2.18",
+        "font-awesome": "fontawesome#4.4.0",
+        "abdmob/x2js": "^1.2.0",
+        "angular-material": "^1.0.9",
+        "material-design-icons-iconfont": "^2.0.4"
+    }
+}

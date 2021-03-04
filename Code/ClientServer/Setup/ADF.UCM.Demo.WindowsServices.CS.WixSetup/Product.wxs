@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ArcelorMittal Wix template for RAD compliant Windows service deployments -->
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+  <!-- Include package specific configuration -->
+  <?include $(sys.CURRENTDIR)\Configuration.wxi?>
+
+  <Product Id="*"  Name="$(var.ProductName)" Manufacturer="$(var.Manufacturer)" Version="$(var.UCMMajorMinorPatch)"
+                   UpgradeCode="$(var.UpgradeCode)" Language="1033" Codepage="Windows-1252">
+
+    <Package Id="*" Description="$(var.Description)" Comments="$(var.Comments)" Manufacturer="$(var.Manufacturer)"
+                    InstallerVersion="200" Languages="1033" 
+                    Compressed="$(var.Compressed)" InstallScope="perMachine" InstallPrivileges="elevated"/>
+
+    <MediaTemplate EmbedCab="yes" />
+
+    <!-- Set the custom properties -->
+    <Property Id="VSDFrameworkVersion" Value="v2.0"  />
+   
+    <!-- Use the ArcelorMittal Windows UI to select the windows directory -->
+    <UIRef Id="WixUI_WinArcelorMittal"/>
+
+    <!-- Include the project output -->	
+    <Feature Id="ProductFeature" Title="$(var.ProductTitle)" Level="1">
+      <ComponentGroupRef Id="myProjectOutputFiles" />
+      <ComponentGroupRef Id="myInstallerComponents"  />
+    </Feature>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+	    <Directory Id="INSTALLDIR" Name="$(var.PackageDirectory)" >
+		    <!-- The project output will be dropped in this folder -->
+	    </Directory >
+    </Directory >
+  </Product>
+
+  <!-- Configure the Windows Service -->
+  <Fragment>
+    <ComponentGroup Id="myInstallerComponents" Directory="INSTALLDIR">
+      <Component Id="myInstallerComponent" Guid="{694F5C40-383E-44B8-9847-4CA0F1686672}">
+        <File Id='ServiceEXE' Name='$(var.myProjectOutput.TargetFileName)' Source='$(var.myProjectOutput.OutputPath)\$(var.myProjectOutput.TargetFileName)' KeyPath="yes"/>
+        <File Id='ServiceCONFIG' Name='$(var.myProjectOutput.TargetFileName).config' Source='$(var.myProjectOutput.OutputPath)\$(var.myProjectOutput.TargetFileName).config' />
+        
+        <!-- There is no need any more to set the ServiceName and Description via the config file of the Windows Service (ProjectInstaller class can be ommitted) />-->
+        <ServiceInstall Id="SeviceInstall" Name="$(var.ServiceName)" DisplayName="$(var.ServiceName)" Description="$(var.Description)"
+                        Type="ownProcess" Start="disabled" Account="LocalSystem" ErrorControl="normal">
+
+          <!--<ServiceConfig Id="abc" DelayedAutoStart="yes" />-->
+          <!--<ServiceDependency Id="xyz"/>-->
+          
+         </ServiceInstall>
+        
+        <ServiceControl Id="ServiceControl" Stop="both" Remove="uninstall" Name="$(var.ServiceName)" Wait="no" />
+        <CreateFolder/>
+      </Component>
+    </ComponentGroup>
+
+  </Fragment>
+</Wix>

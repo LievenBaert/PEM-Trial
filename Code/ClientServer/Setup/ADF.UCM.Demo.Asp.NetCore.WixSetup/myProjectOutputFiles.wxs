@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLDIR">
+            <Component Id="cmp1D2A955A94963206B5B1A1A9779CCE9E" Guid="{6D4CE046-E787-4D7D-8DDA-E996D550B8F5}">
+                <File Id="fil93BA94742D166BD6371B596662D4CB7A" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\ADF.UCM.Demo.Asp.NetCore.deps.json" />
+            </Component>
+            <Component Id="cmp42E1460E8461B814F87DE162F3334692" Guid="{96E3E456-FE93-45F5-8564-17D719BE2536}">
+                <File Id="fil5E16053A9E8F5F6F3CB07E5BAA738E01" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\ADF.UCM.Demo.Asp.NetCore.dll" />
+            </Component>
+            <Component Id="cmp23742330D659B2E9CD4395C9C64E2610" Guid="{41B97ABF-D030-47DA-96D2-AEA09406B1B7}">
+                <File Id="fil40F7CE9B385CBFC9B68EF0A156BD9CBF" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\ADF.UCM.Demo.Asp.NetCore.pdb" />
+            </Component>
+            <Component Id="cmp1966B93D12764888B1F020680D75FFDD" Guid="{B62467CE-E43F-4BB0-A443-6F9D02C164CB}">
+                <File Id="fil6311A7CA49AA77B1D242913327EB7823" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\ADF.UCM.Demo.Asp.NetCore.runtimeconfig.json" />
+            </Component>
+            <Component Id="cmp44A0A6589120D3965A8546C60FC53155" Guid="{6C026CBF-40D7-461A-AEBE-F3594B8DC392}">
+                <File Id="fil5E73BC52D0BB86A7B41ABEC65EF2A9FA" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\apphost.exe" />
+            </Component>
+            <Component Id="cmp715A4F5EB2D3D09B5F696114D54A5E43" Guid="{F386BE76-8D1E-4272-BD8E-E4E37EB1B6F1}">
+                <File Id="fil406ECA15076FBF3AB41DA8D74ADB5F61" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\appsettings.Development.json" />
+            </Component>
+            <Component Id="cmpEAADC52B3271083A1F1CD0732723AF62" Guid="{813009EB-6027-42AB-B6AF-7FB05DF576DA}">
+                <File Id="filE7FD4AC986746A877DE112376788A7F7" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\appsettings.json" />
+            </Component>
+            <Component Id="cmpAC1EF7FCB456D1A97C8CFAEDE5A7270B" Guid="{FF4F5E32-8250-47F1-9E56-FBBEBFCAC032}">
+                <File Id="fil9633EC6DEAE99278A2F4177A2E29BE50" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\hostfxr.dll" />
+            </Component>
+            <Component Id="cmp669F51CC243CD89223372BD42F3302AB" Guid="{C9FE3C4B-D1FA-43AB-939A-E59EA1EE36F7}">
+                <File Id="fil0C9260F9002C3F7CB2E81033C5567AE3" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\hostpolicy.dll" />
+            </Component>
+            <Component Id="cmpD390CB599D579198C43670F051AC20C0" Guid="{661F1F18-EBC8-45AD-BD2C-4CF0D49BC495}">
+                <File Id="fil176EEE406BDACD881DA05C499F593D91" KeyPath="yes" Source="$(var.myProjectOutput.PackagePath)\web.config" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="myProjectOutputFiles">
+            <ComponentRef Id="cmp1D2A955A94963206B5B1A1A9779CCE9E" />
+            <ComponentRef Id="cmp42E1460E8461B814F87DE162F3334692" />
+            <ComponentRef Id="cmp23742330D659B2E9CD4395C9C64E2610" />
+            <ComponentRef Id="cmp1966B93D12764888B1F020680D75FFDD" />
+            <ComponentRef Id="cmp44A0A6589120D3965A8546C60FC53155" />
+            <ComponentRef Id="cmp715A4F5EB2D3D09B5F696114D54A5E43" />
+            <ComponentRef Id="cmpEAADC52B3271083A1F1CD0732723AF62" />
+            <ComponentRef Id="cmpAC1EF7FCB456D1A97C8CFAEDE5A7270B" />
+            <ComponentRef Id="cmp669F51CC243CD89223372BD42F3302AB" />
+            <ComponentRef Id="cmpD390CB599D579198C43670F051AC20C0" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>
