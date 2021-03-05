@@ -1,3 +1,0 @@
-{
-  "extends": "./node_modules/@arcelormittal-platform/dev-tools/tsconfig/tsconfig-app.json"
-}
