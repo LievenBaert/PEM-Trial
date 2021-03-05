@@ -1,1 +1,2 @@
-npm install --registry=http:\\packagefeeds.sidmar.be:81\npm\NpmDev
+::npm install --registry=http:\\xxxx:81\npm\NpmDev
+npm install

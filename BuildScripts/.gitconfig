@@ -10,5 +10,5 @@
 [http]
 	sslVerify = false
 
-[https]
-	proxy = http://packagefeeds.sidmar.be:8888
+[xhttps]
+	xproxy = http://xxxx:8888

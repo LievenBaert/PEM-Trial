@@ -14,7 +14,8 @@ goto START
 
     IF "0.0.0" == %VERSION%  (
         :: Publish to dev channel
-        npm publish --registry=http:\\packagefeeds.sidmar.be:81\npm\NpmDev
+        ::npm publish --registry=http:\\xxxx:81\npm\NpmDev
+        npm publish
         npm publish --tag alpha
     ) ELSE (
         npm publish --tag "%TAG%"

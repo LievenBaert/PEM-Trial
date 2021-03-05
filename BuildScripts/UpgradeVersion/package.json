@@ -85,10 +85,10 @@
   ],
   "repository": {
     "type": "tfs",
-    "url": "http://wftfsprod.sidmar.be:8080/tfs/Public%20Services/AWF%20Libarary/AWF.Core"
+    "url": "http://tttt:8080/tfs/cccc/t1/AWF.Core"
   },
   "bugs": {
-    "url": "http://wftfsprod.sidmar.be:8080/tfs/Public%20Services/Development%20process%20and%20standards/Front-End%20Core"
+    "url": "http://tttt:8080/tfs/cccc/t2/Front-End%20Core"
   },
   "engines": {
     "node": ">= 6.0.0",
